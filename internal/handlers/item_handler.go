@@ -58,7 +58,7 @@ func (ic *ItemHandler) Create(c *fiber.Ctx) error {
 	}
 
 	return c.Status(http.StatusCreated).JSON(fiber.Map{
-		"status": 200,
+		"status": 201,
 		"item":   data,
 	})
 }

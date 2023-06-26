@@ -60,7 +60,7 @@ func (is *ItemServiceImpl) Create(c *fiber.Ctx) (*entity.Item, error) {
 		return nil, err
 	}
 
-	return result, err
+	return result, nil
 }
 
 func (is *ItemServiceImpl) Update(c *fiber.Ctx) (*entity.Item, error) {
